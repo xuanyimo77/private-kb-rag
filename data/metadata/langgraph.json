@@ -1,0 +1,36 @@
+{
+  "00-环境配置.md": {
+    "created_at": 1725000000.0,
+    "updated_at": 1725000000.0
+  },
+  "01-LangGraph基础入门.md": {
+    "created_at": 1725000001.0,
+    "updated_at": 1725000001.0
+  },
+  "02-LangGraph控制流与节点执行.md": {
+    "created_at": 1725000002.0,
+    "updated_at": 1725000002.0
+  },
+  "03-LangGraph持久化与记忆管理.md": {
+    "created_at": 1725000003.0,
+    "updated_at": 1725000003.0
+  },
+  "04-LangGraph中断与工具与部署.md": {
+    "created_at": 1725000004.0,
+    "updated_at": 1725000004.0
+  },
+  "05-LangGraph高级特性.md": {
+    "created_at": 1725000005.0,
+    "updated_at": 1725000005.0
+  },
+  "05-LangGraph高级特性_backup.md": {
+    "created_at": 1725000006.0,
+    "updated_at": 1725000006.0
+  },
+  "suggestions": [
+    "LangGraph 的 StateGraph 是什么？它和普通 Agent 有什么区别？",
+    "如何在 LangGraph 中实现多轮对话的上下文记忆？",
+    "LangGraph 的节点和边是怎么定义的？怎么控制执行顺序？",
+    "LangGraph 如何处理中断和恢复？interrupt 函数怎么用？"
+  ]
+}

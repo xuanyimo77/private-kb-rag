@@ -1,0 +1,43 @@
+# ============================================================
+# 私有知识库 RAG 系统 - 依赖清单
+# 适配 langchain==1.2.12（LangChain 1.x LTS）
+# Python 版本要求：>=3.10, <4.0（不支持 3.9 及以下）
+# ============================================================
+
+# ===== Web 框架 =====
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+
+# ===== 数据模型（langchain 1.2.12 要求 pydantic>=2.7.4）=====
+pydantic>=2.7.4,<3.0.0
+pydantic-settings>=2.1.0
+
+# ===== RAG 编排（langchain 1.2.12 生态）=====
+langchain==1.2.12
+langchain-core>=1.2.10,<2.0.0
+langchain-text-splitters>=1.1.2,<2.0.0
+langchain-community>=0.3.0
+langgraph>=1.0.8
+langsmith>=0.1.17,<1.0.0
+
+# ===== 向量数据库 =====
+# Milvus 集成已包含在 langchain-community 中，无需额外 langchain-milvus
+pymilvus>=2.4.0
+
+# ===== Embedding & Reranker =====
+# Embedding 使用 OpenAI text-embedding-3-small API（需 openai SDK）
+openai>=1.0.0
+# Reranker 仍使用本地 bge-reranker 模型（需 sentence-transformers / transformers / torch）
+sentence-transformers>=3.0.0
+transformers>=4.41.0
+torch>=2.2.0
+
+# ===== 文档解析 =====
+pypdf>=4.2.0
+
+# ===== HTTP 客户端（前端/测试用）=====
+requests>=2.31.0
+
+# ===== 可选：Streamlit 演示前端 =====
+streamlit>=1.34.0
