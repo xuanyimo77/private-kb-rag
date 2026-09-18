@@ -272,13 +272,3 @@ streamlit run frontend.py
 5. **文档字符串**：public 函数/类加 docstring，说明用途、参数、返回值。
 
 ---
-
-## 十、后续优化方向
-
-- [ ] 异步文档解析：大文件上传返回 task_id，后台线程处理，提供任务状态查询接口
-- [ ] 多轮对话：对话历史存储 + Query Rewrite 查询改写，解决指代消解
-- [ ] API 鉴权：中间件校验 API Key
-- [ ] RAGAS 评估接口：上传测试集，自动计算 context_precision、answer_relevancy 等指标
-- [ ] 文件大小限制与格式校验
-- [ ] 向量库定期 compact 与备份
-- [ ] 前端文档列表展示与删除交互
